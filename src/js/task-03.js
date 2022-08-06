@@ -29,6 +29,7 @@ height=100%
 
 galleryListElem.style.display = "flex";
 galleryListElem.style.justifyContent = "space-around";
+galleryListElem.style.listStyleType = "none";
 
 galleryListElem.insertAdjacentHTML("beforeend", galleryItemsElem);
 console.log(galleryListElem);
