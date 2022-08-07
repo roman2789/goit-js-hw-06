@@ -16,15 +16,7 @@ const images = [
 const galleryListElem = document.querySelector(".gallery");
 
 const galleryItemsElem = images
-  .map(
-    (item) =>
-      `<li><img
-src=${item.url}
-alt=${item.alt}
-width=250
-height=100%
-></li>`
-  )
+  .map((item) => `<li><img src=${item.url} alt=${item.alt} width=250 height=100%></li>`)
   .join("");
 
 galleryListElem.style.display = "flex";
