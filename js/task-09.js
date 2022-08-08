@@ -12,4 +12,3 @@ function changeColor() {
   body.style.backgroundColor = getRandomHexColor();
   color.textContent = getRandomHexColor();
 }
-console.log();

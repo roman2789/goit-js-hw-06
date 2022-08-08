@@ -11,4 +11,3 @@ ingredients.forEach((element) => {
 });
 
 ingredientsListElem.append(...ingredientsAllItemsElem);
-console.log(ingredientsListElem);
