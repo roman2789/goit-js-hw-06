@@ -16,6 +16,7 @@ createBtnElem.addEventListener("click", onCreateBtnClick);
 resetBtnElem.addEventListener("click", onResetBtnClick);
 
 function onCreateBtnClick(amount) {
+  boxes.innerHTML = "";
   amount = totalBoxes;
   let defaultSize = 30;
   for (let i = 1; i <= amount; i++) {
@@ -25,6 +26,7 @@ function onCreateBtnClick(amount) {
     box.style = `width: ${size}px; height: ${size}px; background-color: ${getRandomHexColor()};`;
 
     boxes.appendChild(box);
+    input.value = "";
   }
 }
 function onResetBtnClick() {
